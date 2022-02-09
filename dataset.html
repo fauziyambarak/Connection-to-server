@@ -1,0 +1,59 @@
+<html><head>
+
+<title>Monthly reports</title>
+<style>
+    table, th, td {
+      border:0.5px solid black;
+    }
+    </style>
+</head>
+<body>
+    <h1>Data Entry</h1>
+
+    <label for="month">Period in Months</label>
+    <input type="month" id="month" name="period" placeholder="select the month"><br/>
+
+<table>
+    <form action="connect.php" method="post">
+  <tr>
+    <th></th>
+    <th>Beginning Balance</th>
+    <th>Quantity Dispensed</th>
+    <th>Closing Balance</th>
+    
+  </tr>
+  <tr>
+    <td>Product 1</td>
+    <td><input type="text"  name="b_balance"><br/></td>
+    <td><input type="number" name="q_dispensed"min="0"><br/></td>
+    <td><input type="text"  name="c_balance"><br/></td>
+  </tr>
+  <tr>
+    <td>Product 2</td>
+    <td><input type="text"  name="b_balance"><br/></td>
+    <td><input type="number"  name="q_dispensed"min="0"><br/></td>
+    <td><input type="text"  name="c_balance"><br/></td>
+  </tr>
+  <tr>
+    <td>Product 3</td>
+    <td><input type="text"  name="b_balance"><br/></td>
+    <td><input type="number"  name="q_dispensed"min="0"><br/></td>
+    <td><input type="text"  name="c_balance"><br/></td>
+  </tr>
+    <tr> <td>Product 4</td>
+        <td><input type="text"  name="b_balance"><br/></td>
+        <td><input type="number"  name="q_dispensed" min="0"><br/></td>
+        <td><input type="text"  name="c_balance"><br/></td>
+    </tr>
+    
+    
+
+
+</table>
+<input type="submit" value="Submit" />
+</form>
+
+
+
+</body>
+</html>
